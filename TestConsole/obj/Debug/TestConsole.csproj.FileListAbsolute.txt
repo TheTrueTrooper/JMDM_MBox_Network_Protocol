@@ -1,0 +1,10 @@
+C:\Users\Angelo's Tower PC\source\repos\JMDM_Network_Protocol\TestConsole\bin\Debug\TestConsole.exe.config
+C:\Users\Angelo's Tower PC\source\repos\JMDM_Network_Protocol\TestConsole\bin\Debug\TestConsole.exe
+C:\Users\Angelo's Tower PC\source\repos\JMDM_Network_Protocol\TestConsole\bin\Debug\TestConsole.pdb
+C:\Users\Angelo's Tower PC\source\repos\JMDM_Network_Protocol\TestConsole\bin\Debug\JMDM_Network_Protocol.dll
+C:\Users\Angelo's Tower PC\source\repos\JMDM_Network_Protocol\TestConsole\bin\Debug\JMDM_Network_Protocol.pdb
+C:\Users\Angelo's Tower PC\source\repos\JMDM_Network_Protocol\TestConsole\obj\Debug\TestConsole.csprojAssemblyReference.cache
+C:\Users\Angelo's Tower PC\source\repos\JMDM_Network_Protocol\TestConsole\obj\Debug\TestConsole.csproj.CoreCompileInputs.cache
+C:\Users\Angelo's Tower PC\source\repos\JMDM_Network_Protocol\TestConsole\obj\Debug\TestConsole.csproj.CopyComplete
+C:\Users\Angelo's Tower PC\source\repos\JMDM_Network_Protocol\TestConsole\obj\Debug\TestConsole.exe
+C:\Users\Angelo's Tower PC\source\repos\JMDM_Network_Protocol\TestConsole\obj\Debug\TestConsole.pdb
