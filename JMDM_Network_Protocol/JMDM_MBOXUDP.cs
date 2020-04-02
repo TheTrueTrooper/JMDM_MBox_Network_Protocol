@@ -110,6 +110,11 @@ namespace JMDM_Network_Protocol
             UDPSendPort.Send(Bytes, Bytes.Count(), SendEndPoint);
         }
 
+        public void Reset()
+        {
+            byte[] DataFrame = new byte[18];
+        }
+
         public void SetAxis(uint[] AxisSets, Channels Channels = Channels.Set3Axis, bool Absolute = false)
         {
             const string AxisError = "Number of axis doesn't match picked set";
