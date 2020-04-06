@@ -94,11 +94,21 @@ namespace JMDM_Network_Protocol
         byte[] DualAnologChannels = new byte[4] { 0x00, 0x00 , 0x00, 0x00 };
 
 
+        //other bytes
+        byte[] WriteRegisters = new byte[2] { 0x12, 0x01};
+        byte[] ReadRegisters = new byte[2] { 0x011, 0x01 };
+
+        //write types
+        byte[] SavelessWrite = new byte[2] { 0x00, 0x00 };
+        byte[] ObjectOrCommandRegisters = new byte[2] { 0x00, 0x02 };
+
+        byte[] CommandRegistersAddress = new byte[2] { 0x00, 0x00 };
+        byte[] ParamRegistersAddress = new byte[2] { 0x00, 0x90 };
 
         UdpClient UDPReceivePort;
         UdpClient UDPSendPort;
 
-        public JMDM_MBOXUDP(string TargetConnectionIP, int SendPort = 7408, int ReceivePort = 8401)
+        public JMDM_MBOXUDP(string TargetConnectionIP, int SendPort = /*8401*/ 7408, int ReceivePort = /*7408*/ 8401)
         {
             SendEndPoint = new IPEndPoint(IPAddress.Parse(TargetConnectionIP), SendPort);
             UDPSendPort = new UdpClient(SendPort);
@@ -110,9 +120,78 @@ namespace JMDM_Network_Protocol
             UDPSendPort.Send(Bytes, Bytes.Count(), SendEndPoint);
         }
 
+        void MakeWriteStart(byte[] DataFrame)
+        {
+            Array.Copy(VerificationCode, 0, DataFrame, 0, 2);
+            Array.Copy(PassCode, 0, DataFrame, 2, 2);
+            Array.Copy(WriteRegisters, 0, DataFrame, 4, 2);
+            //skip one reg for write type to Ips
+            Array.Copy(ReciveFromIP, 0, DataFrame, 8, 2);
+            Array.Copy(ReplyToIP, 0, DataFrame, 10, 2);
+        }
+
+        void MakeCommandStart(byte[] DataFrame)
+        {
+            MakeWriteStart(DataFrame);
+            //fill in write type
+            Array.Copy(ObjectOrCommandRegisters, 0, DataFrame, 6, 2);
+            Array.Copy(CommandRegistersAddress, 0, DataFrame, 12, 2);
+        }
+
+        public void MakeParamStart(byte[] DataFrame)
+        {
+            //fill in write type
+            Array.Copy(SavelessWrite, 0, DataFrame, 6, 2);
+            Array.Copy(ParamRegistersAddress, 0, DataFrame, 12, 2);
+        }
+
         public void Reset()
         {
             byte[] DataFrame = new byte[18];
+            MakeCommandStart(DataFrame);
+            Array.Copy(CommandRegistersAddress, 0, DataFrame, 12, 2);
+            //operate on only one register
+            DataFrame[14] = 0x00;
+            DataFrame[15] = 0x01;
+            //reset command
+            DataFrame[16] = 0x00;
+            DataFrame[17] = 0x00;
+            SendData(DataFrame);
+        }
+
+        public void EMStop()
+        {
+            byte[] DataFrame = new byte[18];
+            MakeParamStart(DataFrame);
+            
+            //operate on only one register
+            DataFrame[14] = 0x00;
+            DataFrame[15] = 0x01;
+            //EMStop command
+            DataFrame[16] = 0x00;
+            DataFrame[17] = 0x01;
+            SendData(DataFrame);
+        }
+
+        public void EMStopRelease()
+        {
+            byte[] DataFrame = new byte[18];
+            MakeParamStart(DataFrame);
+
+            //operate on only one register
+            DataFrame[14] = 0x00;
+            DataFrame[15] = 0x01;
+            //EMStop release command
+            DataFrame[16] = 0x00;
+            DataFrame[17] = 0x00;
+            SendData(DataFrame);
+        }
+
+        public void CancelEmergancyStop()
+        {
+            byte[] DataFrame = new byte[18];
+            MakeCommandStart(DataFrame);
+            Array.Copy(CommandRegistersAddress, 0, DataFrame, 12, 2);
         }
 
         public void SetAxis(uint[] AxisSets, Channels Channels = Channels.Set3Axis, bool Absolute = false)

@@ -45,61 +45,12 @@
   <ItemGroup>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="ZYPlatform2017_U3D-master\Assets\Scripts\Editor\BuildTool\CustomBuild.cs" />
-    <Compile Include="ZYPlatform2017_U3D-master\Assets\Scripts\VersionConctrol\ZyINIClass.cs" />
-    <Compile Include="ZYPlatform2017_U3D-master\Assets\Scripts\VersionConctrol\ZyVersionControl.cs" />
-    <Compile Include="ZYPlatform2017_U3D-master\Assets\XDInterface\Scripts\TestMotion.cs" />
-    <Compile Include="ZYPlatform2017_U3D-master\Assets\XDInterface\Scripts\XDDeviceControl.cs" />
-    <Compile Include="ZYPlatform2017_U3D-master\Assets\XDInterface\Scripts\XDDeviceControlManager.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="King 360 VR and sled VR Simulator Englist version.docx" />
     <None Include="sled_English-version.docx" />
     <None Include="slide English version.docx" />
-    <None Include="ZYPlatform2017_U3D-master\Assets\Scripts.meta" />
-    <None Include="ZYPlatform2017_U3D-master\Assets\Scripts\Editor.meta" />
-    <None Include="ZYPlatform2017_U3D-master\Assets\Scripts\Editor\BuildTool.meta" />
-    <None Include="ZYPlatform2017_U3D-master\Assets\Scripts\Editor\BuildTool\CustomBuild.cs.meta" />
-    <None Include="ZYPlatform2017_U3D-master\Assets\Scripts\VersionConctrol.meta" />
-    <None Include="ZYPlatform2017_U3D-master\Assets\Scripts\VersionConctrol\ZyINIClass.cs.meta" />
-    <None Include="ZYPlatform2017_U3D-master\Assets\Scripts\VersionConctrol\ZyVersionControl.cs.meta" />
-    <None Include="ZYPlatform2017_U3D-master\Assets\XDInterface.meta" />
-    <None Include="ZYPlatform2017_U3D-master\Assets\XDInterface\Animation.meta" />
-    <None Include="ZYPlatform2017_U3D-master\Assets\XDInterface\Animation\Player.controller" />
-    <None Include="ZYPlatform2017_U3D-master\Assets\XDInterface\Animation\Player.controller.meta" />
-    <None Include="ZYPlatform2017_U3D-master\Assets\XDInterface\Animation\TestAnimation.anim" />
-    <None Include="ZYPlatform2017_U3D-master\Assets\XDInterface\Animation\TestAnimation.anim.meta" />
-    <None Include="ZYPlatform2017_U3D-master\Assets\XDInterface\Plugins.meta" />
-    <None Include="ZYPlatform2017_U3D-master\Assets\XDInterface\Plugins\x86.meta" />
-    <None Include="ZYPlatform2017_U3D-master\Assets\XDInterface\Plugins\x86\XDinterface.dll.meta" />
-    <None Include="ZYPlatform2017_U3D-master\Assets\XDInterface\Plugins\x86_64.meta" />
-    <None Include="ZYPlatform2017_U3D-master\Assets\XDInterface\Scene.meta" />
-    <None Include="ZYPlatform2017_U3D-master\Assets\XDInterface\Scene\Main.unity" />
-    <None Include="ZYPlatform2017_U3D-master\Assets\XDInterface\Scene\Main.unity.meta" />
-    <None Include="ZYPlatform2017_U3D-master\Assets\XDInterface\Scripts.meta" />
-    <None Include="ZYPlatform2017_U3D-master\Assets\XDInterface\Scripts\TestMotion.cs.meta" />
-    <None Include="ZYPlatform2017_U3D-master\Assets\XDInterface\Scripts\XDDeviceControl.cs.meta" />
-    <None Include="ZYPlatform2017_U3D-master\Assets\XDInterface\Scripts\XDDeviceControlManager.cs.meta" />
-    <None Include="ZYPlatform2017_U3D-master\Assets\ZyData.meta" />
-    <None Include="ZYPlatform2017_U3D-master\Assets\ZyData\GameManger.meta" />
-    <None Include="ZYPlatform2017_U3D-master\Assets\ZyData\GameManger\VersionControl.ini" />
-    <None Include="ZYPlatform2017_U3D-master\Assets\ZyData\GameManger\VersionControl.ini.meta" />
-    <None Include="ZYPlatform2017_U3D-master\ProjectSettings\AudioManager.asset" />
-    <None Include="ZYPlatform2017_U3D-master\ProjectSettings\ClusterInputManager.asset" />
-    <None Include="ZYPlatform2017_U3D-master\ProjectSettings\DynamicsManager.asset" />
-    <None Include="ZYPlatform2017_U3D-master\ProjectSettings\EditorBuildSettings.asset" />
-    <None Include="ZYPlatform2017_U3D-master\ProjectSettings\EditorSettings.asset" />
-    <None Include="ZYPlatform2017_U3D-master\ProjectSettings\GraphicsSettings.asset" />
-    <None Include="ZYPlatform2017_U3D-master\ProjectSettings\InputManager.asset" />
-    <None Include="ZYPlatform2017_U3D-master\ProjectSettings\NavMeshAreas.asset" />
-    <None Include="ZYPlatform2017_U3D-master\ProjectSettings\NetworkManager.asset" />
-    <None Include="ZYPlatform2017_U3D-master\ProjectSettings\Physics2DSettings.asset" />
-    <None Include="ZYPlatform2017_U3D-master\ProjectSettings\ProjectSettings.asset" />
-    <None Include="ZYPlatform2017_U3D-master\ProjectSettings\QualitySettings.asset" />
-    <None Include="ZYPlatform2017_U3D-master\ProjectSettings\TagManager.asset" />
-    <None Include="ZYPlatform2017_U3D-master\ProjectSettings\TimeManager.asset" />
-    <None Include="ZYPlatform2017_U3D-master\ProjectSettings\UnityConnectSettings.asset" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\JMDM_Network_Protocol\JMDM_Network_Protocol.csproj">
@@ -107,12 +58,6 @@
       <Name>JMDM_Network_Protocol</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup>
-    <Content Include="ZYPlatform2017_U3D-master\Assets\XDInterface\Plugins\x86\XDinterface.dll" />
-    <Content Include="ZYPlatform2017_U3D-master\ProjectSettings\ProjectVersion.txt" />
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="ZYPlatform2017_U3D-master\Assets\XDInterface\Plugins\x86_64\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

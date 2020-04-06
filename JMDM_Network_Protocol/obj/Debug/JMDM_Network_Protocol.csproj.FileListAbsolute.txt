@@ -4,3 +4,8 @@ C:\Users\Angelo's Tower PC\source\repos\JMDM_Network_Protocol\JMDM_Network_Proto
 C:\Users\Angelo's Tower PC\source\repos\JMDM_Network_Protocol\JMDM_Network_Protocol\bin\Debug\JMDM_Network_Protocol.pdb
 C:\Users\Angelo's Tower PC\source\repos\JMDM_Network_Protocol\JMDM_Network_Protocol\obj\Debug\JMDM_Network_Protocol.dll
 C:\Users\Angelo's Tower PC\source\repos\JMDM_Network_Protocol\JMDM_Network_Protocol\obj\Debug\JMDM_Network_Protocol.pdb
+C:\Users\The_Beast\Documents\GitHub\JMDM_Network_Protocol\JMDM_Network_Protocol\bin\Debug\JMDM_Network_Protocol.dll
+C:\Users\The_Beast\Documents\GitHub\JMDM_Network_Protocol\JMDM_Network_Protocol\bin\Debug\JMDM_Network_Protocol.pdb
+C:\Users\The_Beast\Documents\GitHub\JMDM_Network_Protocol\JMDM_Network_Protocol\obj\Debug\JMDM_Network_Protocol.csprojAssemblyReference.cache
+C:\Users\The_Beast\Documents\GitHub\JMDM_Network_Protocol\JMDM_Network_Protocol\obj\Debug\JMDM_Network_Protocol.dll
+C:\Users\The_Beast\Documents\GitHub\JMDM_Network_Protocol\JMDM_Network_Protocol\obj\Debug\JMDM_Network_Protocol.pdb
